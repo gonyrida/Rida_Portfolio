@@ -6,7 +6,7 @@ const work = [
   { no: '02', type: 'USER GUIDE POSTER', title: 'Car Booking User Guide Poster', tag: 'BEHANCE PROJECT', cls: 'car', href: 'https://www.behance.net/gallery/252745163/Car-Booking-User-Guide-Poster' },
   { no: '03', type: 'SCHOOL WEBSITE WIREFRAME', title: 'School Website (NICS)', tag: 'BEHANCE PROJECT', cls: 'school', href: 'https://www.behance.net/gallery/250448805/School-Website-(NICS)' },
   { no: '04', type: 'CINEMA WEBSITE UI', title: 'CINEMAX', tag: 'BEHANCE PROJECT', cls: 'cinemax', href: 'https://www.behance.net/gallery/244926721/CINEMAX' },
-  { no: '05', type: 'SOCIAL POST SERIES', title: 'Meet you on the mat.', tag: 'COMMUNITY SPOTLIGHT', cls: 'social' },
+  { no: '05', type: 'SELF-DIRECTED DESIGN EXERCISE', title: 'Potato Chip Promotional Poster', tag: 'BEHANCE PROJECT', cls: 'chip', href: 'https://www.behance.net/gallery/257964995/Poster-for-Potato-Chip' },
   { no: '06', type: 'STORY CONCEPT', title: 'One week. One new habit.', tag: 'TRAINING CHALLENGE', cls: 'story' },
 ]
 const skills = [
@@ -33,7 +33,8 @@ export default function App() {
             <div className="art-top"><span>RIDA GONY <span className="art-slash">/</span> SELECTED WORK</span><ArrowUpRight size={15}/></div>
             {item.cls === 'coffee' ? <><img className="real-thumbnail" src="/coffee-promo-poster.png" alt="Coffee promotion poster featuring iced latte and iced Americano"/><span className="thumbnail-scrim"/></>
               : item.cls === 'car' ? <><img className="real-thumbnail" src="/car-booking-poster.png" alt="Car booking service poster with five-step Telegram booking instructions and vehicle lineup"/><span className="thumbnail-scrim"/></>
-              : item.cls === 'school' ? <><img className="real-thumbnail" src="/school-website.png" alt="Responsive Norol Iman High School website design shown on desktop and mobile"/><span className="thumbnail-scrim"/></>
+              : item.cls === 'school' ? <><img className="real-thumbnail" src="/school-website.png" alt="Responsive Norol Iman High School website design shown on desktop and mobile"/><span className="thumbnail-scrim"/>
+                </> : item.cls === 'chip' ? <><img className="real-thumbnail" src="/potato-chip-poster.png" alt="Blue potato chip promotional poster with a snack pack and headline"/><span className="thumbnail-scrim"/></>
               : <><img className="real-thumbnail" src="/cinemax-project.png" alt="CINEMAX cinema website UI showcasing movie discovery, cinema details, and seat selection"/><span className="thumbnail-scrim"/></>}
             <div className="art-footer"><span>{item.tag}</span><ArrowUpRight size={16}/></div>
           </a> : <div className="work-art"><div className="art-top"><span>RIDA GONY <span className="art-slash">/</span> CONCEPT {item.no}</span><span>2026</span></div><div className="art-visual">{i === 4 ? <><span className="art-small">BUILT HERE.</span><strong>TOGETHER<span>.</span></strong><div className="art-person">RG</div><span className="art-bottom">THE PEOPLE MAKE THE PLACE.</span></> : <><span className="art-small">YOUR WEEKLY RESET</span><strong>ROUND<br/>AFTER<br/>ROUND<span>.</span></strong><div className="story-line"/><span className="art-bottom">SHOW UP FOR YOURSELF ↗</span></>}</div><div className="art-footer"><span>{item.tag}</span><ArrowUpRight size={16}/></div></div>}
